@@ -9,8 +9,12 @@
     <button (click)='toggleDetails(i)'  class="btn btn-primary">Toggle Details</button>
 <!-- <app-quote-description  *ngIf='myquotes.showDescription' [myquotes]='myquotes' (isComplete) = 'completeMyquotes($event,i)'></app-quote-description> -->
  
-<app-quote-description  *ngIf='myquotes.showDescription' [myquotes]='myquotes' (isComplete) = 'deleteMyquotes($event,i)'></app-quote-description></div>
+<app-quote-description  *ngIf='myquotes.showDescription' [myquotes]='myquotes' (isComplete) = 'deleteMyquotes($event,i)'></app-quote-description>
+</div>
 </ul>
+<button class="btn btn-primary" (click)="vote(i)">vote</button>
+<button class="btn" (click)="download(i)">Download</button>
+<!-- <button class="btn btn-danger" (click)="delQuote(i)">Delete</button> -->
 
   </div>
 <app-quote-form (addMyquotes)="addNewMyquotes($event)"></app-quote-form>

@@ -11,7 +11,16 @@ export class QuoteFormComponent implements OnInit {
 
   submit(){
 this.addMyquotes.emit(this.newMyquotes);
+    
   }
+  // submit(){
+  //   this.Quote = new Myquotes( this.myquotesauthor, this.myquotesquote)
+   
+  //   this.quotesauthor = ''
+  //   this.quotePublisher = ''
+  //   this.emitQuote.emit(this.theQuote)
+  //   this.addMyquotes.emit(this.newMyquotes);
+  // }
   constructor() { }
 
   ngOnInit() {

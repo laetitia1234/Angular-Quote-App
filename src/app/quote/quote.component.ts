@@ -44,6 +44,34 @@ export class QuoteComponent implements OnInit {
       }
     }
   }
+  
+//   preNum:number
+//   lastNum:number
+//   counter:number
+
+//   addMyquotes(emittedMyquotes){
+//     this.myquotes.push(emittedMyquotes)
+//   }
+
+//   pvote(i){
+//       this.myquotes[i].vote+=1
+//   }
+//  pdwnload(i){
+//     this.myquotes[i].download+=1
+//   }
+//   delQuote(i){
+//     this.myquotes.splice(i, 1)
+//   }
+//   highestUpvote(){
+//     this.preNum = 0
+//     this.lastNum = 0
+
+//     for(this.counter=0 ; this.counter < this.myquotes.length; this.counter++) {
+//       this.lastNum = this.myquotes[this.counter].vote;
+//       if(this.lastNum > this.preNum){this.preNum = this.lastNum}
+//     }
+//     return  this.preNum
+//   }
   constructor() { }
 
   ngOnInit() {
