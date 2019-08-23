@@ -1,0 +1,16 @@
+<!-- <p>works</p> -->
+<p>Author:{{myquotes.author}}</p>
+<button>Vote</button>:{{myquotes.vote}}<br>
+  
+<button>Download</button>:{{myquotes.download}}
+<div>
+        <!-- <button (click)= 'myquotesComplete(true)'>Delete</button> -->
+        <button (click)= 'myquotesDelete(true)'>Delete quote</button>
+      
+        <p>This quote is posted in {{myquotes.completeDate|dateCounter}} days ago</p>
+        <!-- <button (click)= 'quoteDelete(true)'>Delete Goal</button> -->
+</div>
+  
+
+  
+  

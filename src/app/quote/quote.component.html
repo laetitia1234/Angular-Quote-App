@@ -1,0 +1,18 @@
+<p>quote works!</p>
+<div>
+    
+    <h2>Here we GO</h2>
+    <ul>
+  <div *ngFor='let myquotes of myquotes;let i = index'>
+    <li>{{myquotes.quote}}  due on {{myquotes.completeDate|date|uppercase}}</li>
+    
+    <button (click)='toggleDetails(i)'  class="btn btn-primary">Toggle Details</button>
+<!-- <app-quote-description  *ngIf='myquotes.showDescription' [myquotes]='myquotes' (isComplete) = 'completeMyquotes($event,i)'></app-quote-description> -->
+ 
+<app-quote-description  *ngIf='myquotes.showDescription' [myquotes]='myquotes' (isComplete) = 'deleteMyquotes($event,i)'></app-quote-description></div>
+</ul>
+
+  </div>
+<app-quote-form (addMyquotes)="addNewMyquotes($event)"></app-quote-form>
+<!-- <app-goal-form (addMyquotes)="addNewMyquotes($event)"></app-goal-form> -->
+  
