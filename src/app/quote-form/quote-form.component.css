@@ -1,0 +1,26 @@
+input[type=date] {
+    width: 100%;
+    background-color:#EEE2BD;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+input[type=submit]:hover {
+    background-color:white;
+    text-transform:capitalise;
+    
+  }
+  input[type=text]{
+    background-color:#EEE2BD;
+  }
+  textarea{
+    background-color:#EEE2BD;  
+  }
+  form{
+      font-family: Arial, Helvetica, sans-serif;
+      text-transform:uppercase;
+  }

@@ -30,6 +30,11 @@ export class QuoteDescriptionComponent implements OnInit {
     downloadShow(){
          this.downloadshow = true;
          return this.downloadquote= this.downloadquote+ 1;
+    
+          // return this.votequote= this.votequote- 1;
+    
+     // 
+         
     }
   constructor() { }
 

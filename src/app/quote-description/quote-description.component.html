@@ -1,14 +1,13 @@
 <!-- <p>works</p> -->
 <div class="container">
 <p>Author:{{myquotes.author}}</p>
-<!-- <p>Quote:{{myquotes.quote}}</p> -->
-<!-- <button>Vote</button>:{{myquotes.vote}}<br> -->
+
 <div class="row">
 <div class="col-md-1"><button type="text" class="btn btn-outline-info" (click)="voteShow()">Upvote</button> </div>:
 <div class="col-md-1"><p *ngIf="voteshow">{{ votequote }}  </p> </div>
 </div>
 <div class="row">
- <div class="col-md-1"><button type="text" class="btn btn-outline-info" (click)="downloadShow()">Download</button></div>:
+ <div class="col-md-1"><button type="text" class="btn btn-outline-info" (click)="downloadShow()">Downloads</button></div>:
 <div class="col-md-1"><p *ngIf="voteshow">{{ downloadquote }}  </p> </div>
 </div>
 <!-- <button>Download</button>:{{myquotes.download}} -->
