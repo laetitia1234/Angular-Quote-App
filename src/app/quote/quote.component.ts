@@ -12,15 +12,56 @@ export class QuoteComponent implements OnInit {
     new Myquotes(2,'trust is earned when actions meet words','chris butler',0,0,new Date(2019,3,14)),
     
   ];
+  votequote = 0;
+  voteshow = true;
+
+  voteShow(){
+       this.voteshow = true;
+       return this.votequote= this.votequote+ 1;
+  }
+  // preNum:number
+  // lastNum:number
+  // countere:number
+
+  toggleDetails(index){
+    this. myquotes[index].showDescription = !this. myquotes[index].showDescription;
+  }
+
   addNewMyquotes(myquotes){
     let myquotesLength = this.myquotes.length;
     myquotes.id =myquotesLength+1;
     myquotes.completeDate = new Date(myquotes.completeDate)
     this.myquotes.push(myquotes)
+
+
+
   }
-  toggleDetails(index){
-    this. myquotes[index].showDescription = !this. myquotes[index].showDescription;
-  }
+  // // /   preNum:number
+  // // lastNum:number
+  // // counter:number
+
+
+  // upvote(i){
+  //     this.myquotes[i].upvotes+=1
+  // }
+  // downvote(i){
+  //   this.myquotes[i].downvotes+=1
+  // }
+  // // delQuote(i){
+  // //   this.quotes.splice(i, 1)
+  // // }
+  // highestUpvote(){
+  //   this.preNum = 0
+  //   this.lastNum = 0
+
+  //   for(this.countere=0 ; this.countere < this.myquotes.length; this.countere++) {
+  //     this.lastNum = this.myquotes[this.countere].upvotes;
+  //     if(this.lastNum > this.preNum){this.preNum = this.lastNum}
+  //   }
+  //   return  this.preNum
+  // }
+
+  
   // completeMyquotes(isComplete, index){
   //   if (isComplete) {
   //     this.myquotes.splice(index,1);
@@ -35,6 +76,7 @@ export class QuoteComponent implements OnInit {
     //     }
 
     //   }}
+  
   deleteMyquotes(isComplete, index){
     if (isComplete) {
       let toDelete = confirm(`Are you sure you want to delete ${this.myquotes[index].quote}?`)
@@ -45,33 +87,7 @@ export class QuoteComponent implements OnInit {
     }
   }
   
-//   preNum:number
-//   lastNum:number
-//   counter:number
 
-//   addMyquotes(emittedMyquotes){
-//     this.myquotes.push(emittedMyquotes)
-//   }
-
-//   pvote(i){
-//       this.myquotes[i].vote+=1
-//   }
-//  pdwnload(i){
-//     this.myquotes[i].download+=1
-//   }
-//   delQuote(i){
-//     this.myquotes.splice(i, 1)
-//   }
-//   highestUpvote(){
-//     this.preNum = 0
-//     this.lastNum = 0
-
-//     for(this.counter=0 ; this.counter < this.myquotes.length; this.counter++) {
-//       this.lastNum = this.myquotes[this.counter].vote;
-//       if(this.lastNum > this.preNum){this.preNum = this.lastNum}
-//     }
-//     return  this.preNum
-//   }
   constructor() { }
 
   ngOnInit() {

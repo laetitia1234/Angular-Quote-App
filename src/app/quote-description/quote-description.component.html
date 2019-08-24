@@ -1,11 +1,15 @@
 <!-- <p>works</p> -->
 <p>Author:{{myquotes.author}}</p>
-<button>Vote</button>:{{myquotes.vote}}<br>
-  
-<button>Download</button>:{{myquotes.download}}
+<!-- <p>Quote:{{myquotes.quote}}</p> -->
+<!-- <button>Vote</button>:{{myquotes.vote}}<br> -->
+<button type="text" class="btn btn-primary" (click)="voteShow()">Upvote:</button> 
+ <p *ngIf="voteshow">{{ votequote }}  </p> 
+ <button type="text" class="btn btn-primary" (click)="downloadShow()">Download:</button> 
+ <p *ngIf="voteshow">{{ downloadquote }}  </p> 
+<!-- <button>Download</button>:{{myquotes.download}} -->
 <div>
         <!-- <button (click)= 'myquotesComplete(true)'>Delete</button> -->
-        <button (click)= 'myquotesDelete(true)'>Delete quote</button>
+        <button (click)= 'myquotesDelete(true)' class="btn btn-primary">Delete quote</button>
       
         <p>This quote is posted in {{myquotes.completeDate|dateCounter}} days ago</p>
         <!-- <button (click)= 'quoteDelete(true)'>Delete Goal</button> -->

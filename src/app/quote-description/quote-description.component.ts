@@ -15,6 +15,22 @@ export class QuoteDescriptionComponent implements OnInit {
   myquotesDelete(complete:boolean){
     this.isComplete.emit(complete);
   }
+  // vote quote
+  votequote = 0;
+    voteshow = true;
+
+    voteShow(){
+         this.voteshow = true;
+         return this.votequote= this.votequote+ 1;
+    }
+    // download vote
+    downloadquote = 0;
+    downloadshow = true;
+
+    downloadShow(){
+         this.downloadshow = true;
+         return this.downloadquote= this.downloadquote+ 1;
+    }
   constructor() { }
 
   ngOnInit() {

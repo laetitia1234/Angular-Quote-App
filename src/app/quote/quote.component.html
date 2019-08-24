@@ -1,4 +1,4 @@
-<p>quote works!</p>
+<!-- <p>quote works!</p> -->
 <div>
     
     <h2>Here we GO</h2>
@@ -12,11 +12,19 @@
 <app-quote-description  *ngIf='myquotes.showDescription' [myquotes]='myquotes' (isComplete) = 'deleteMyquotes($event,i)'></app-quote-description>
 </div>
 </ul>
-<button class="btn btn-primary" (click)="vote(i)">vote</button>
-<button class="btn" (click)="download(i)">Download</button>
+
+
+
 <!-- <button class="btn btn-danger" (click)="delQuote(i)">Delete</button> -->
 
   </div>
 <app-quote-form (addMyquotes)="addNewMyquotes($event)"></app-quote-form>
 <!-- <app-goal-form (addMyquotes)="addNewMyquotes($event)"></app-goal-form> -->
-  
+
+<!-- <button type="text" class="btn btn-primary" (click)="voteShow()">Click Me</button>   -->
+
+<!-- <button type="text" class="btn btn-primary" (click)="dOWNLOA()">Click Me</button> -->
+
+
+
+<!-- <p *ngIf="voteshow">{{ votequote }}  </p> -->
