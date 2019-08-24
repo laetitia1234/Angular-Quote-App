@@ -19,9 +19,7 @@ export class QuoteComponent implements OnInit {
        this.voteshow = true;
        return this.votequote= this.votequote+ 1;
   }
-  // preNum:number
-  // lastNum:number
-  // countere:number
+  
 
   toggleDetails(index){
     this. myquotes[index].showDescription = !this. myquotes[index].showDescription;
@@ -36,30 +34,7 @@ export class QuoteComponent implements OnInit {
 
 
   }
-  // // /   preNum:number
-  // // lastNum:number
-  // // counter:number
 
-
-  // upvote(i){
-  //     this.myquotes[i].upvotes+=1
-  // }
-  // downvote(i){
-  //   this.myquotes[i].downvotes+=1
-  // }
-  // // delQuote(i){
-  // //   this.quotes.splice(i, 1)
-  // // }
-  // highestUpvote(){
-  //   this.preNum = 0
-  //   this.lastNum = 0
-
-  //   for(this.countere=0 ; this.countere < this.myquotes.length; this.countere++) {
-  //     this.lastNum = this.myquotes[this.countere].upvotes;
-  //     if(this.lastNum > this.preNum){this.preNum = this.lastNum}
-  //   }
-  //   return  this.preNum
-  // }
 
   
   // completeMyquotes(isComplete, index){
