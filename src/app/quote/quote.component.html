@@ -4,31 +4,34 @@
     <div class="h2"><h1>welcome to quote blog</h1></div>
     <h2 div class="h1">my favorite quote </h2>
     <ul>
-  <div *ngFor='let myquotes of myquotes;let i = index'>
-    <li>{{myquotes.id}} {{myquotes.quote}}  due on {{myquotes.completeDate|date|uppercase}}</li>
+      <div *ngFor='let myquotes of myquotes;let i = index'>
+        <li>{{myquotes.id}} {{myquotes.quote}}  due on {{myquotes.completeDate|date|uppercase}}</li>
     
-    <button (click)='toggleDetails(i)'  class="btn btn-success">View Details </button>
-<!-- <app-quote-description  *ngIf='myquotes.showDescription' [myquotes]='myquotes' (isComplete) = 'completeMyquotes($event,i)'></app-quote-description> -->
+        <button (click)='toggleDetails(i)'  class="btn btn-success">View Details </button>
+
+        <!-- <app-quote-description  *ngIf='myquotes.showDescription' [myquotes]='myquotes' (isComplete) = 'completeMyquotes($event,i)'></app-quote-description> -->
  
-<app-quote-description  *ngIf='myquotes.showDescription' [myquotes]='myquotes' (isComplete) = 'deleteMyquotes($event,i)'></app-quote-description>
-</div>
-</ul>
-</div>
+        <app-quote-description  *ngIf='myquotes.showDescription' [myquotes]='myquotes' (isComplete) = 'deleteMyquotes($event,i)'></app-quote-description>
+     </div>
+    </ul>
+  </div>
 
 
-<!-- <button class="btn btn-danger" (click)="delQuote(i)">Delete</button> -->
+  <!-- <button class="btn btn-danger" (click)="delQuote(i)">Delete</button> -->
 
-<div class="row form">
+  <div class="row form">
+
     <div class="col-md-6"></div>
- <div class="col-md-6">
-<app-quote-form (addMyquotes)="addNewMyquotes($event)"></app-quote-form>
-<!-- <app-goal-form (addMyquotes)="addNewMyquotes($event)"></app-goal-form> -->
+    
+    <div class="col-md-6">
+      <app-quote-form (addMyquotes)="addNewMyquotes($event)"></app-quote-form>
+      <!-- <app-goal-form (addMyquotes)="addNewMyquotes($event)"></app-goal-form> -->
 
-<!-- <button type="text" class="btn btn-primary" (click)="voteShow()">Click Me</button>   -->
+      <!-- <button type="text" class="btn btn-primary" (click)="voteShow()">Click Me</button>   -->
 
-<!-- <button type="text" class="btn btn-primary" (click)="dOWNLOA()">Click Me</button> -->
-</div>
-</div>
+      <!-- <button type="text" class="btn btn-primary" (click)="dOWNLOA()">Click Me</button> -->
+    </div>
+  </div>
 
-<!-- <p *ngIf="voteshow">{{ votequote }}  </p> -->
+  <!-- <p *ngIf="voteshow">{{ votequote }}  </p> -->
 </div>
