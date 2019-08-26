@@ -1,47 +1,57 @@
-Angular-Quote-App
-By Laetitia Uwizeyimana
-Description
-The project is quotes project where the user is able to submit his favorite quote
+# Angular-Quote-App
+#### By **Laetitia Uwizeyimana**
+##
+## Description
+ The project  is quotes project where the user is able to submit his favorite quote
 
-BDD
-the user has to input this or her quote into the form
+## BDD
 
-the the quote written must be displayed
+>the user has to input this or her quote into the form
 
-user is able to delete quote user is able to see votes and downloates quote number when he click on corresponding button
+  
+>the the quote written must be displayed
 
-Setup/Installation Requirements
- computer with Internet
- Google clome to get the Webpage
- visual stidio or any other code editor
- linux instalation (option)
-Development server
-Run ng serve for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
+>user is able to delete quote
+>user is able   to see votes and downloates quote number when he click on corresponding button
 
-Code scaffolding
-Run ng generate component component-name to generate a new component. You can also use ng generate directive|pipe|service|class|guard|interface|enum|module.
 
-Build
-Run ng build to build the project. The build artifacts will be stored in the dist/ directory. Use the --prod flag for a production build.
+## Setup/Installation Requirements
+     computer with Internet
+     Google clome to get the Webpage
+     visual stidio or any other code editor
+     linux instalation (option)
+## Development server
 
-Running unit tests
-Run ng test to execute the unit tests via Karma.
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-Known Bugs
-highlithing still not work
+## Code scaffolding
 
-Technologies Used
-*Angular 6
-*jQuery
-* Bootstrap
-* Javascript
-* html
-* css 
-link to my Github account
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+
+## Build
+
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+
+## Running unit tests
+
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+
+
+## Known Bugs
+ highlithing still not work
+
+## Technologies Used
+    *Angular 6
+    *jQuery
+    * Bootstrap
+    * Javascript
+    * html
+    * css 
+## link to my Github account
+
 https://laetitia1234.github.io/Angular-Quote-App/
-
-Support and contact details
+## Support and contact details
 Any contribution or support please contact me on my email:uwizelaetitia@gmail.com
+### License
 
-License
-Copyright (c) 2019Laetitia
+Copyright (c) 2019**Laetitia**
