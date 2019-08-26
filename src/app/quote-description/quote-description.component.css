@@ -6,3 +6,6 @@ ul li{
 ul{
     display: block;
 }
+button{
+    width: 150px;
+}
