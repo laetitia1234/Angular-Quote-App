@@ -30,17 +30,18 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 #### By **Laetitia Uwizeyimana**
 ##
 ## Description
-  This project is about creating  Landing page for a fictional studio as shown below.
-  <img src="Delani.jpg" width="750" title="hover text">
+ The projecr
 
 ## BDD
 
->the user has 
-when clicked should toggle between the respective description of each icon. The description should be centered aligned. The header should be in bold and centered also. 
-  
->Create a Hover effect for the **Portfolio ** sections such that on hover a white box appears with then name of the project inside. The project picture should still be visible in the background. 
+>the user has to input this or her quote into the form
 
->Tell the user through a pop up that you have received their message and also thank them for contacting you .
+  
+>the the quote written must be displayed
+
+>user is able to delete quote
+>user is able   to see votes and downloates quote number when he click on corresponding button
+
 
 ## Setup/Installation Requirements
      computer with Internet
