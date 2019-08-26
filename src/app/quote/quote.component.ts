@@ -31,8 +31,6 @@ export class QuoteComponent implements OnInit {
     myquotes.completeDate = new Date(myquotes.completeDate)
     this.myquotes.push(myquotes)
 
-
-
   }
 
 
