@@ -5,7 +5,7 @@
  The project  is quotes project where the user is able to submit his favorite quote
 
 ## BDD
-
+>the user will first be able to see my forite quotes
 >the user has to input this or her quote into the form
 
   
